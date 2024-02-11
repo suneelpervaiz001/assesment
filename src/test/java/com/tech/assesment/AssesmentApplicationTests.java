@@ -36,7 +36,7 @@ class AssesmentApplicationTests {
 	private UserRepository userRepository;
 
 	@Test
-	public void getUsersTest(){
+	void getUsersTest(){
 
 		when(userRepository.findAll()).thenReturn(Stream
 				.of(new RetailUser(1, "john", "john@gmail.com", UserType.AFFILIATE),

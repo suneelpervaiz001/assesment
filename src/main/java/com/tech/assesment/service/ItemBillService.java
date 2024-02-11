@@ -5,7 +5,6 @@ import com.tech.assesment.entity.RetailUser;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.Optional;
 
 @Service
 public class ItemBillService {
@@ -19,7 +18,7 @@ public class ItemBillService {
 
 
         double discountAmount = 0;
-        double furtherDiscount = 0; // $5 discount on every $100
+        double furtherDiscount = 0;
 
         // Apply discount rules
         if (!isGrocery) {

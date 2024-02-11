@@ -30,7 +30,7 @@ public class RetailUser extends AuditMetaData{
     @JoinColumn(name="item_ID",referencedColumnName="id")
     List<Item> agents = new ArrayList<>();
 
-    public RetailUser(int i, String john, String s, UserType customer) {
+    public RetailUser(int id, String name, String email, UserType userType) {
         super();
     }
 }
