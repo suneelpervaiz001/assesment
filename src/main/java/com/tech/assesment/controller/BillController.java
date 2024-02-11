@@ -12,8 +12,14 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/bill")
 public class BillController {
 
+
+    private final ItemBillService itemBillService;
+
     @Autowired
-    ItemBillService itemBillService;
+    BillController (ItemBillService itemBillService){
+        this.itemBillService = itemBillService;
+    }
+
 
     @PostMapping("/calculate")
     public double calculateTotalBill(@RequestBody Bill bill) {
